@@ -11,10 +11,10 @@ function App() {
   return (
     <div className='main'>
       <div className='background-image'>
-    {/* <CommunityChat/> */}
-      <Header/>
+    <CommunityChat/>
+      {/* <Header/> */}
     {/* <Communty/> */}
-    <Invite/>
+    {/* <Invite/> */}
       </div>
 
       <Footer/>

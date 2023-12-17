@@ -78,21 +78,52 @@ function CommunityChat() {
 
       <div className="chats">
         <div className="sender">
-         <div className="sender-profile-image"></div>
-         <div className="sender-chat-message">
+          <div className="sender-profile-image"></div>
+          <div className="sender-chat-message">
             <p> Name</p>
-            <h1> Sam, are you ready? 🤣😂</h1>
-         </div>
+            <h1> Sam, are you ready for lauch ? 🤣😂</h1>
+          </div>
         </div>
         <div className="receiver">
           <p> I am fine how are you </p>
         </div>
       </div>
+
       <div className="chat-input">
-        <input type="text" className="chat-input-text" placeholder="Type a message" />
-        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
-  <circle cx="13.5" cy="14" r="13.5" fill="#233C4C"/>
-</svg>
+        <input
+          className="chat-input-text"
+          type="text"
+          placeholder="Type a message"
+        />
+        <div className="chat-input-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="13"
+            viewBox="0 0 12 13"
+            fill="none"
+          >
+            <path
+              d="M1.75 1.17285C1.79212 1.17285 1.83357 1.1835 1.87048 1.2038L11.1017 6.281C11.2227 6.3475 11.2669 6.49955 11.2003 6.6205C11.1775 6.66205 11.1432 6.69625 11.1017 6.7191L1.87048 11.7963C1.7495 11.8628 1.59748 11.8187 1.53094 11.6977C1.51064 11.6608 1.5 11.6194 1.5 11.5772V1.42285C1.5 1.28478 1.61193 1.17285 1.75 1.17285ZM2.5 2.69131V6.00005H5V7.00005H2.5V10.3088L9.42495 6.50005L2.5 2.69131Z"
+              fill="#FDEAFF"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div className="up-arrow">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="12"
+          height="12"
+          viewBox="0 0 12 12"
+          fill="none"
+        >
+          <path
+            d="M6.00005 2.41797L2.89648 5.5215L3.60359 6.22865L6.00005 3.83218L8.3965 6.22865L9.1036 5.5215L6.00005 2.41797ZM6.00005 5.2429L2.89648 8.34645L3.60359 9.0536L6.00005 6.65715L8.3965 9.0536L9.1036 8.34645L6.00005 5.2429Z"
+            fill="black"
+          />
+        </svg>
       </div>
     </div>
   );
