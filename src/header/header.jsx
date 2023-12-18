@@ -1,14 +1,27 @@
+import React, { useState } from "react";
+import Communty from "../community/community";
+import Invite from "../Invite/invite";
+import PtoP from "../personal/p2p";
 function Header() {
+  const [toggle, setToggle] = useState(1)
+
+  function updateToggle(value){
+    console.log(value);
+    setToggle(value)
+    console.log(toggle);
+  }
+
+
     return (
       <div>
         <div className="chat-Header">
           <div className="yellow-dot"></div>
           <div className="chat-name">Chat</div>
         </div>
-        <div className="chat-people">
+        <div className="chat-people" >
           {/* <div className="chat-people-icon"></div> */}
          
-          <div className="chat-header-icon">
+          <div className="chat-header-icon" onClick={()=> updateToggle(1)}>
           
           <svg 
             className="chat-people-icon"
@@ -27,7 +40,7 @@ function Header() {
           </div>
 
 
-          <div className="chat-header-icon">
+          <div className="chat-header-icon" onClick={()=> updateToggle(2)}>
           <svg 
            className="chat-people-icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +55,7 @@ function Header() {
             />
           </svg>
           </div>
-          <div className="chat-header-icon">
+          <div className="chat-header-icon" onClick={()=> updateToggle(3)}>
           <svg
             className="chat-people-icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +74,9 @@ function Header() {
          
           
         </div>
-
+        {toggle === 1 && <Communty />}
+        {toggle === 2 && <PtoP />}
+       {toggle === 3 && <Invite />}
 
         
       </div>

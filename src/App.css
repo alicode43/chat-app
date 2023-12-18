@@ -20,6 +20,14 @@
   border-radius: 24px;
 }
 
+/* content show or not show */
+.show-content {
+  display: block;
+}
+.display-none {
+  display: none;
+}
+
 /* contact profile ***************************************************************************************/
 
 .contact-card {
